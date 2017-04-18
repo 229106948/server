@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentServlet</servlet-name>
+		<servlet-class>com.bus.servlet.StudentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>NoticeServlet</servlet-name>
+		<servlet-class>com.bus.servlet.NoticeServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>LocationServlet</servlet-name>
+    <servlet-class>com.bus.servlet.LocationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LeaveServlet</servlet-name>
+    <servlet-class>com.bus.servlet.LeaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ParentServlet</servlet-name>
+    <servlet-class>com.bus.servlet.ParentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LineServlet</servlet-name>
+    <servlet-class>com.bus.servlet.LineServlet</servlet-class>
+  </servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>NoticeServlet</servlet-name>
+		<url-pattern>/servlet/notice</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StudentServlet</servlet-name>
+		<url-pattern>/servlet/student</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationServlet</servlet-name>
+    <url-pattern>/servlet/location</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LeaveServlet</servlet-name>
+    <url-pattern>/servlet/leave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParentServlet</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LineServlet</servlet-name>
+    <url-pattern>/servlet/line</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
